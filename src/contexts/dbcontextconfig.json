@@ -1,0 +1,14 @@
+{
+    "server": "dbaserver2022.database.windows.net",
+    "authentication": {
+        "type": "default",
+        "options": {
+            "userName": "Helena",
+            "password": "Studiegruppe12!"
+        }
+    },
+    "options": {
+        "encrypt": true,
+        "database": "DBA"
+    }
+}

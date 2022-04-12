@@ -1,0 +1,25 @@
+{
+  "name": "eksamensopgave",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helenarosendahl/Eksamensopgave.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helenarosendahl/Eksamensopgave/issues"
+  },
+  "homepage": "https://github.com/helenarosendahl/Eksamensopgave#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "tedious": "^14.4.0"
+  },
+  "description": ""
+}
