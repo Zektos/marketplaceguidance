@@ -31,8 +31,8 @@ router.post("/create", async(req, res) => {
 
     if (username === null || password === null || email === null || userlevel === null || followedads === null) res.status(500).send('ERROR IN BODY');
 
-    let getAllTSQL = "INSERT INTO ProgEksamen.Users (ID, Username, Password, Email, Userlevel, Followed_ads) VALUES ((SELECT TOP(1) ID FROM [ProgEksamen].[Users] ORDER BY ID DESC) + 1, @username, @password, @email, @userlevel, @followedads)"
-    let result = await dbContext.executeNonQuery(getAllTSQL, [
+    let createUserTSQL = "INSERT INTO ProgEksamen.Users (ID, Username, Password, Email, Userlevel, Followed_ads) VALUES ((SELECT TOP(1) ID FROM [ProgEksamen].[Users] ORDER BY ID DESC) + 1, @username, @password, @email, @userlevel, @followedads)"
+    let result = await dbContext.executeNonQuery(createUserTSQL, [
         ['username', TYPES.Text, username],
         ['password', TYPES.Text, password],
         ['email', TYPES.Text, email],
