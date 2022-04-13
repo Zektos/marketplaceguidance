@@ -12,6 +12,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static("./src/views"));
 // JSON
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 // Routes
 app.use("/users", userController);

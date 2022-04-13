@@ -1,12 +1,6 @@
 document.addEventListener("DOMContentLoaded", (event) => {
-    let user = localStorage.getItem("user");
-    if (!user) {
-        location.href = location.origin + "/login.html";
-    } else {
-        user = JSON.parse(user);
-        // document.getElementById("userIDLabel").innerHTML = user.email;
-    }
 
+    // Event on button click
     document.getElementById("getUsersButton").addEventListener("click", (x, ev) => {
         fetch(location.origin + "/users/getall", {
                 method: "GET",
