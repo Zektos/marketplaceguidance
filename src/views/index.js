@@ -7,8 +7,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 headers: {
                     "Content-Type": "application/json",
                     'Accept': 'application/json'
-                },
-                // body: JSON.stringify(user),
+                }
             })
             .then((resp) => {
                 return resp.json();
